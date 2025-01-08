@@ -9,13 +9,21 @@ const tasks = [
     },
 ];
 const btn = document.querySelector('.js-btn');
+const taskList = document.querySelector ('.js-task');
 
-for (const tasks of tasks) {
-  tasks.innerHTML += `<li> ${tasks} </li>`;
-  console.log(tasks);
-}
+//funcion para ppintar las tareas en la lista 
+function renderTasks() {
+  taskList.innerHTML = "";
+
+  for ( const task of tasks){
+    taskList.innerHTML +=  `<li> ${task} </li>`;
+    console.log(task);
+  }
+};
+
+function handleClick() {
+  console.log();
+};
 
 renderTasks();
 btn.addEventListener('click', handleClick);
-
-

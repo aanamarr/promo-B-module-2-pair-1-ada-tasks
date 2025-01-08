@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AdaTasks</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
   </head>
 <body>
+  <header class="header">
     <div class="container">
         <h1>AdaTasks 🗓️</h1>
-        <form>
+    </header>
+
+        <form class="newTask">
             <input type="text" class="js-task" placeholder="Nueva tarea">
-            <button class="">Agregar</button>
+            <button class="btnTask">Agregar</button>
         </form>
-        <form>
+        <form class="search">
             <input type="text" class="js-list" placeholder="Ejemplo: Comprar pan">
             <ul class="js-tasks"></ul>
             <button class="js-btn">Buscar</button>

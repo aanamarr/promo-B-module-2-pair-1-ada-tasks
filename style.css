@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+}
+
+.newTask{
+    display: flex;
+    padding:20px;
+}
+
+.btnTask{
+    
+    margin-top: 10px ;
+}
+
+.search{
+    display: flex;
+    padding: 20px;
+
+}
