@@ -3,35 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdaTasks</title>
     <link rel="stylesheet" href="./css/style.css">
-
-    <title>Lista de Tareas</title>
-</head>
+  </head>
 <body>
     <header class="header">
-            <h1 class="title">AdaTasks</h1>
+    <div class="container">
+        <h1>AdaTasks 🗓️</h1>
     </header>
-    <main class="main"> 
-        <section class="container add ">
-        <form class="task-form-add">
-            <input type="text" class="task-input js-text-task-add" placeholder="Nueva tarea">
-            <button class="add-task-btn js-btn-add">Agregar</button>
+
+        <form class="newTask">
+            <input type="text" class="js-new-task" placeholder="Nueva tarea">
+            <button class=" btnTask js-btn-task" type="button">Agregar</button>
         </form>
-    </section>
 
-    <section class="container">
-        <form class="task-form">
-            <input type="text" class="task-input js-text-task-filter" placeholder="Ejemplo: gim">
-            <button class="add-task-btn js-btn-filter">Buscar</button>
+        <form class="search">
+            <input type="text" class="js-search" placeholder="Ejemplo: Comprar pan">
+            <button class="js-btn-search" type="button">Buscar</button>
         </form>
-        <ul class="task-list js-tasks">
-            <!-- Aquí se mostrarán las tareas -->
-        </ul>
-    </section>
-    </main>
-   
 
-
+        <ul class="js-tasks"></ul>
+    </div>
     <script src="./js/task.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuidv4.min.js"></script>
 
