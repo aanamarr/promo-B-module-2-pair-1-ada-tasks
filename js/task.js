@@ -8,22 +8,18 @@ const tasks = [
       id: 4,
     },
 ];
-const btn = document.querySelector('.js-btn');
-const taskList = document.querySelector ('.js-task');
 
-//funcion para ppintar las tareas en la lista 
-function renderTasks() {
-  taskList.innerHTML = "";
 
-  for ( const task of tasks){
-    taskList.innerHTML +=  `<li> ${task} </li>`;
-    console.log(task);
-  }
-};
+//traer elementos del html
+const btnAddTask = document.querySelector('.js-btn-task');
+const btnSearch = document.querySelector('.js-btn-search');
+const newTaskInput = document.querySelector('.js-new-task');
+const searchInput = document.querySelector('.js-search');
+const taskList = document.querySelector('.js-tasks');
 
-function handleClick() {
-  console.log();
-};
 
-renderTasks();
-btn.addEventListener('click', handleClick);
+
+  // pintar tareas en el html 
+  for (const task of tasks) {
+    taskList.innerHTML += `<li>${task.name}</li>`;
+  };
