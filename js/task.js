@@ -20,6 +20,22 @@ const taskList = document.querySelector('.js-tasks');
 
 
   // pintar tareas en el html 
+  // añadir checkbox , añadir id al checkbox, escuchar el evento click sobre la lista de tareas
+
   for (const task of tasks) {
-    taskList.innerHTML += `<li>${task.name}</li>`;
+    const checkbox = `<input type="checkbox" id="task-${task.id}" class="task-checkbox" ${task.completed ? "checked" : ""}>`;
+    taskList.innerHTML += `
+      <li class="${task.completed ? "completed" : ""}">
+        ${checkbox}
+        ${task.name}
+      </li>`;
+  }
+
+
+  const handleClickList = (event) => {
+    const taskId = parseInt(event.target.id);
+    if (!taskId) return; 
+
   };
+
+ 
